@@ -9,7 +9,7 @@
 
     <name>SocketIO Extension SDK</name>
     <description>SocketIO extensions and utilities</description>
-    <developers>
+        <developers>
         <developer>
             <name>Loong Wan</name>
             <email>hiwepy@gmail.com</email>
