@@ -9,6 +9,18 @@
 
     <name>SocketIO Extension SDK</name>
     <description>SocketIO extensions and utilities</description>
+    <developers>
+        <developer>
+            <name>Loong Wan</name>
+            <email>hiwepy@gmail.com</email>
+            <url>https://github.com/loong10k</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
 
     <properties>
         <slf4j.version>2.0.18</slf4j.version>
