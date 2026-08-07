@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/socketio-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](https://www.apache.org/licenses/LICENSE-2.0.txt)
 
+socketio-extension is a set of extensions and utilities for the Netty-SocketIO server library
+
 ## Table of Contents
 
 - [1. Project Overview](#1-project-overview)
