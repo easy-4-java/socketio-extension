@@ -34,7 +34,7 @@ import java.util.UUID;
  * type safety. Callers are responsible for using a consistent value type per
  * key.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Store
  * @see RedissonExtStoreFactory

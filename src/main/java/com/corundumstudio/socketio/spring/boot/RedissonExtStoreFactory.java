@@ -31,7 +31,7 @@ import java.util.UUID;
  * forwarded to the super-class unchanged because the extension only needs the
  * main data-plane client.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see RedissonExtStore
  */

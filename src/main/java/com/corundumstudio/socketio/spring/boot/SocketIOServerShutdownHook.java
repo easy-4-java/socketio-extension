@@ -27,7 +27,7 @@ import com.corundumstudio.socketio.SocketIOServer;
  * {@link Runtime#addShutdownHook(Thread)} from Spring lifecycle code or an
  * equivalent bootstrapper.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see SocketIOServer#stop()
  */

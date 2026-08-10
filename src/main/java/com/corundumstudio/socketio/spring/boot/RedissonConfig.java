@@ -31,7 +31,7 @@ package org.redisson.config;
  * with whichever deployment topology is required without having to know the
  * internal setter names of {@link Config}.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see Config
  */

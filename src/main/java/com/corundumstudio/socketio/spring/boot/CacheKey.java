@@ -35,7 +35,7 @@ import java.util.function.Function;
  * <p>Null or blank segments are skipped silently during assembly so call sites
  * can pass optional identifiers without conditionals.</p>
  *
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  * @since 3.0.0
  * @see CacheKeyConstant
  */
