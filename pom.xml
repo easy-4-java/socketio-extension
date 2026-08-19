@@ -119,11 +119,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <id>central</id>
-        </profile>
-    </profiles>
     <!-- 制品发布仓库配置（distributionManagement） -->
     <distributionManagement>
         <repository>
@@ -242,4 +237,9 @@
             </plugin>
         </plugins>
     </build>
+    <profiles>
+        <profile>
+            <id>central</id>
+        </profile>
+    </profiles>
 </project>
