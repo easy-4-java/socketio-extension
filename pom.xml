@@ -135,13 +135,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <!-- 构建 Profile 配置 -->
-    <profiles>
-        <!-- 发布到 Maven Central Portal：mvn -Pcentral deploy（GPG 签名 + 源码 + Javadoc + Central 发布插件） -->
-        <profile>
-            <id>central</id>
-        </profile>
-    </profiles>
     <!-- 制品发布仓库配置（distributionManagement） -->
     <distributionManagement>
         <repository>
@@ -271,4 +264,11 @@
             </plugin>
         </plugins>
     </build>
+    <!-- 构建 Profile 配置 -->
+    <profiles>
+        <!-- 发布到 Maven Central Portal：mvn -Pcentral deploy（GPG 签名 + 源码 + Javadoc + Central 发布插件） -->
+        <profile>
+            <id>central</id>
+        </profile>
+    </profiles>
 </project>
