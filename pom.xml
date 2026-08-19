@@ -9,6 +9,7 @@
     <packaging>jar</packaging>
     <description>SocketIO extensions and utilities</description>
 
+    <!-- 开源协议采用 Apache 2.0 协议 -->
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -16,6 +17,7 @@
         </license>
     </licenses>
 
+    <!-- 源码仓库（SCM）信息 -->
     <scm>
         <connection>scm:git:https://github.com/easy-4-java/${project.artifactId}.git</connection>
         <developerConnection>scm:git:https://github.com/easy-4-java/${project.artifactId}.git</developerConnection>
@@ -23,6 +25,7 @@
         <tag>${project.artifactId}</tag>
     </scm>
 
+    <!-- 开发者信息 -->
     <developers>
         <developer>
             <name>Loong Wan</name>
@@ -41,7 +44,7 @@
         <maven.version>4.0.0-rc-5</maven.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <!-- Dependency versions -->
+<!-- Dependency versions -->
         <junit-jupiter.version>6.1.0</junit-jupiter.version>
         <lombok.version>1.18.46</lombok.version>
         <redisson.version>3.36.0</redisson.version>
@@ -49,7 +52,7 @@
         <socketio.version>2.0.11</socketio.version>
         <spring-framework.version>5.3.39</spring-framework.version>
 
-        <!-- Maven Plugin versions -->
+<!-- Maven Plugin versions -->
         <maven-central-publishing-plugin.version>0.11.0</maven-central-publishing-plugin.version>
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
@@ -137,6 +140,24 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+
+        <profile>
+            <id>central</id>
+        </profile>
+    </profiles>
+    <!-- 制品发布仓库配置（distributionManagement） -->
+    <distributionManagement>
+        <repository>
+            <id>2624322-release-6F6h6R</id>
+            <url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-release-6f6h6r</url>
+        </repository>
+        <snapshotRepository>
+            <id>2624322-snapshot-3EoOv3</id>
+            <url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-snapshot-3eoov3</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <!-- 构建配置（Build） -->
     <build>
         <pluginManagement>
             <plugins>
@@ -257,55 +278,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <repository>
-            <id>2624322-release-6F6h6R</id>
-            <url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-release-6f6h6r</url>
-        </repository>
-        <snapshotRepository>
-            <id>2624322-snapshot-3EoOv3</id>
-            <url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-snapshot-3eoov3</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <profiles>
-
-        <profile>
-            <id>central</id>
-            <build>
-                <plugins>
-
-                    <plugin>
-
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>${maven-gpg-plugin.version}</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-
-                    <plugin>
-
-                        <groupId>org.sonatype.central</groupId>
-                        <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>${maven-central-publishing-plugin.version}</version>
-                        <extensions>true</extensions>
-                        <configuration>
-                            <publishingServerId>central</publishingServerId>
-                            <autoPublish>true</autoPublish>
-                            <waitUntil>published</waitUntil>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
